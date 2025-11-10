@@ -5,21 +5,27 @@ import HeroV2 from "@/components/sections/HeroV2";
 // Lazy load componentes que não estão na viewport inicial
 const FeaturesV2 = dynamic(() => import("@/components/sections/FeaturesV2"), {
   loading: () => <div className="h-screen bg-black" />,
+  ssr: true,
 });
 const ArchitectureV2 = dynamic(() => import("@/components/sections/ArchitectureV2"), {
   loading: () => <div className="h-screen bg-black" />,
+  ssr: true,
 });
 const PricingV2 = dynamic(() => import("@/components/sections/PricingV2"), {
   loading: () => <div className="h-screen bg-black" />,
+  ssr: true,
 });
 const TrustedPlatforms = dynamic(() => import("@/components/sections/TrustedPlatforms"), {
   loading: () => <div className="h-96 bg-black" />,
+  ssr: true,
 });
 const CTA = dynamic(() => import("@/components/sections/CTA"), {
   loading: () => <div className="h-96 bg-black" />,
+  ssr: true,
 });
 const Footer = dynamic(() => import("@/components/sections/Footer"), {
   loading: () => <div className="h-96 bg-black" />,
+  ssr: true,
 });
 
 export default function HomePage() {
